@@ -1,0 +1,64 @@
+input_csv: "/mnt/c/Users/baris/Downloads/First Results - Sheet15.csv"
+output_csv: "merged_results.csv"
+
+# Models to download
+models:
+  spacy_model: "en_core_web_sm"
+  sbert_model: "all-mpnet-base-v2"
+
+# Custom keywords for filtering
+custom_keywords:
+  - subscription
+  - subscriptions
+  - subscribe
+  - renewal
+  - renew
+  - renews
+  - cancellation
+  - renewing
+  - plan
+  - monthly
+  - daily
+  - yearly
+  - membership
+  - purchase
+  - purchases
+  - payment
+  - price
+  - prices
+  - policy
+  - terms
+  - conditions
+  - period
+  - support
+  - help
+  - trial
+  - automatically
+  - cancel
+
+# Clustering configurations
+clustering_algorithms:
+  kmeans:
+    min_clusters: 20
+    max_clusters: 30
+    step_size: 1
+  gmm:
+    min_clusters: 20
+    max_clusters: 30
+    step_size: 1
+  agglomerative:
+    similarity_threshold: 0.8
+    min_cluster_size: 5
+  affinity: {}
+  birch:
+    n_clusters: None
+    num_trials: 100
+  spectral:
+    min_clusters: 20
+    max_clusters: 30
+    step: 1
+  optics:
+    min_cluster_size: 5
+
+# Merge configuration
+min_common: 3
