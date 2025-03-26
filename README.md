@@ -15,7 +15,7 @@ I undertook this project to demonstrate my ability to write standardized and rob
 
 #### **Preprocessing**
 - The process begins with cleaning unstructured text data, which may include emojis, irregular indentations, and missing punctuation. These are transformed into a standardized format to ensure more robust BERT embeddings, enhancing clustering accuracy.
-- Common sentences containing specific keywords are identified and removed to prevent skewed vectorization. For instance, repetitive sentences like "You can subscribe to the app for these prices" are simplified by retaining essential keywords such as "subscribe." This significantly improves vectorization and clustering accuracy.
+- Common sentences containing specific keywords are identified and removed to prevent skewed vectorization. For instance, repetitive sentences like "You can subscribe to the app for these prices" are erased by choosing essential keywords such as "subscribe." This significantly improves vectorization and clustering accuracy.
 
 #### **Clustering**
 - Multiple clustering algorithms are incorporated, allowing for flexible selection and application.
