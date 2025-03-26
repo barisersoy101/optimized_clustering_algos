@@ -1,4 +1,4 @@
-# 🚀 Optimized Clustering Algorithms (GPU Accelerated)
+# 🚀 Optimized Clustering Algorithms for Text (GPU Accelerated)
 
 A **Python-powered tool** for performing multiple clustering algorithms, dynamically merging results, and optimizing performance with GPU acceleration. The pipeline also includes advanced text preprocessing for enhanced accuracy.
 
